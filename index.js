@@ -1,5 +1,5 @@
 /*
- *  VERSION: @1.0.0
+ *  VERSION: @1.0.1
  *  PACKAGE: Antiflood
  *  LICENSE: DO WHAT EVER YOU WANT BUT DON'T RESELL IT
  *  AUTHOR: clowboy
@@ -11,9 +11,9 @@ module.exports = class{
 		this.timeout = timeout;
 		this.count = count;
 	}
-	feed(){
-		const currentDate = Math.floor(Date.now() / 1000);
-		if(this.requests.filter(r => currentDate - r < this.timeout).length + 1 > this.count)
+	feed(token = {}){
+		const currentDate = {timestamp: Math.floor(Date.now() / 1000), unique: token};
+		if(this.requests.filter(r => currentDate - r.timestamp < this.timeout && JSON.stringify(r.unique) === JSON.stringify(token)).length + 1 > this.count)
 			return false;
 		else
 			this.requests.push(currentDate);
