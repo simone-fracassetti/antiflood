@@ -1,0 +1,27 @@
+{
+  "name": "antiflood",
+  "version": "1.0.4",
+  "description": "Really efficient Antiflood for your API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Welcome on Antiflood!\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clowboy-com/antiflood.git"
+  },
+  "keywords": [
+    "antiflood",
+    "spam",
+    "api",
+    "requests",
+    "tokens",
+    "flood"
+  ],
+  "author": "Clowboy.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/clowboy-com/antiflood/issues"
+  },
+  "homepage": "https://github.com/clowboy-com/antiflood#readme"
+}
