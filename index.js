@@ -1,5 +1,5 @@
 /*
- *  VERSION: @1.0.1
+ *  VERSION: @1.0.2
  *  PACKAGE: Antiflood
  *  LICENSE: DO WHAT EVER YOU WANT BUT DON'T RESELL IT
  *  AUTHOR: clowboy
